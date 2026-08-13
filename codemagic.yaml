@@ -6,9 +6,6 @@ workflows:
     environment:
       flutter: stable
       xcode: latest
-      ios_signing:
-        distribution_type: development
-    bundle_identifier: com.example.gyroCalibrator
     scripts:
       - flutter pub get
       - flutter build ipa --release
